@@ -9,6 +9,12 @@ def enableProguardInReleaseBuilds = false
 android {
     namespace "com.vibesync"
     compileSdkVersion rootProject.ext.compileSdkVersion
+    flavorDimensions "react-native-camera"
+    productFlavors {
+        general {
+            dimension "react-native-camera"
+        }
+    }
 
     defaultConfig {
         applicationId "com.vibesync"
